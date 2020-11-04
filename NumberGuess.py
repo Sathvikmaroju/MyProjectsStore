@@ -1,13 +1,12 @@
 def get_binary_function(number):
     return bin(number).replace("0b", "")
 
-my_list, cards, lst = [i for i in range(1, 64)], [[], [], [], [], [], []], []
+my_list, cards, lst, enter = [i for i in range(1, 64)], [[], [], [], [], [], []], [], ['start']
 my_list.reverse()
 
 for x in my_list:
-    a, b = x, my_list.index(x)
-    lst.insert(b, get_binary_function(a))
-
+    b = my_list.index(x)
+    lst.insert(b, get_binary_function(x))
 for num1 in lst:
     a = list(num1)
     n=len(a)-1
@@ -27,16 +26,12 @@ for num1 in lst:
             cards[1].append(my_list[y])
         elif q == 1:
             cards[0].append(my_list[y])
-
 for i in range(len(cards)):
     cards[i].sort()
 
 print("""Think of a number between 1 and 63.
 Type 'start' when you are ready and hit the 'Enter' key.""")
-enter=['start']
-a=input()
-print()
-while a.lower() not in enter:
+while input().lower() not in enter:
     print("Type 'start' when you are ready and hit the 'Enter' key.")
     a=input()
     print()
