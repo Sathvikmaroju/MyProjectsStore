@@ -21,40 +21,31 @@ def update_scores(user_input):
     pred = predict()
     if user_input == 0:
         if pred == 0:
-            print("\nYou played ROCK, computer played ROCK.")
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played ROCK, computer played ROCK.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
         elif pred == 1:
-            print("\nYou played ROCK, computer played PAPER.")
             comp_score += 1
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played ROCK, computer played PAPER.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
         else:
-            print("\nYou played ROCK, computer played SCISSORS.")
             player_score += 1
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played ROCK, computer played SCISSORS.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
     elif user_input == 1:
         if pred == 0:
-            print("\nYou played PAPER, computer played ROCK.")
             player_score += 1
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played PAPER, computer played ROCK.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
         elif pred == 1:
-            print("\nYou played PAPER, computer played PAPER.")
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played PAPER, computer played PAPER.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
         else:
-            print("\nYou played PAPER, computer played SCISSORS.")
             comp_score += 1
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played PAPER, computer played SCISSORS.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
     elif user_input == 2:
         if pred == 0:
-            print("\nYou played SCISSORS, computer played ROCK.")
             comp_score += 1
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played SCISSORS, computer played ROCK.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
         elif pred == 1:
-            print("\nYou played SCISSORS, computer played PAPER.")
             player_score += 1
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played SCISSORS, computer played PAPER.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
         else:
-            print("\nYou played SCISSORS, computer played SCISSORS.")
-            print("\nComputer Score: ", comp_score, "\nYour Score: ", player_score)
+            print("\nYou played SCISSORS, computer played SCISSORS.\nComputer Score: ", comp_score, "\nYour Score: ", player_score,"\n")
 
 def gamePlay():
     valid_entries = [0, 1, 2]

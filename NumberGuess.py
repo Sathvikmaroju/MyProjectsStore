@@ -5,8 +5,7 @@ my_list, cards, lst, enter = [i for i in range(1, 64)], [[], [], [], [], [], []]
 my_list.reverse()
 
 for x in my_list:
-    b = my_list.index(x)
-    lst.insert(b, get_binary_function(x))
+    lst.insert(my_list.index(x), get_binary_function(x))
 for num1 in lst:
     a = list(num1)
     n=len(a)-1
