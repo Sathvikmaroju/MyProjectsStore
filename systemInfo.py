@@ -1,14 +1,20 @@
 import platform
 
-details = {}
+print(f"""
+Architecture Details - {platform.architecture()}
+System OS - {platform.uname()[0]}
+Node - {platform.uname()[1]}
+Release - {platform.uname()[2]}
+Version - {platform.uname()[3]}
+Machine - {platform.uname()[4]}
+Processer - {platform.uname()[5]}
 
-details["Platform Details"] = platform.platform()
-
-details['System Name'] = platform.system()
-
-details["Processer name"] = platform.processor()
-
-details['Architecture Details'] = platform.architecture()
-
-for k,v in details.items():
-    print(k,"-",v)
+""")
+"""
+"Platform Details" = platform.platform()
+'System OS' = platform.system()
+"Processer name" = platform.processor()
+"System release version" = platform.version()
+'machine' = platform.machine()
+'node' = platform.node()
+"""
