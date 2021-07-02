@@ -1,2 +1,3 @@
 # MyProjectsStore
-List of projects that are done while learning stuff.
+
+projects that are done while learning.
