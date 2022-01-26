@@ -16,7 +16,7 @@ def regularQR(data,filename):
     
 fileName = input("Enter the file name: ")
 Data = input("Enter the data: ")
-choice = input("Enter '0' to get a regular qrcode \n\t\tor\nEnter'1' to get the qrcode in svg format:\t")
+choice = input("Enter '0' to get a regular qrcode(.png format) \n\t\tor\nEnter'1' to get the qrcode in svg format:\t")
 valid_entries = ['0','1']
 while choice not in valid_entries:
         print("\nInvalid!")
